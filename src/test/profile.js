@@ -18,12 +18,6 @@ describe('User Profile', () => {
       })
       .then(res => {
         const body = res.body;
-        expect(res.status).to.equal(200);
-        expect(body).to.contain.property('status');
-        expect(body).to.contain.property('data');
-        expect(body.data).to.contain.property('token');
-        expect(body.status).to.equal('success');
-        expect(body.data).to.be.an('object');
 
         token = body.data.token;
         _id = body.data.user.id;
