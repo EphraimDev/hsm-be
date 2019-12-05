@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node ./dist/app.js",
     "start:dev": "nodemon --exec babel-node src/app.js",
-    "build": "babel ./server --out-dir dist",
-    "eslint": "./node_modules/.bin/eslint --fix ./server/**/*.js",
+    "build": "babel ./src --out-dir dist",
+    "eslint": "./node_modules/.bin/eslint --fix ./src/**/*.js",
     "test": "cross-env NODE_ENV=test nyc mocha --require @babel/register --timeout 10000 ./src/test --exit"
   },
   "repository": {

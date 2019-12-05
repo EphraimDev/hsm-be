@@ -6,3 +6,6 @@ bin/
 coverage/
 .env
 dist/
+.deployment
+carpool.pem
+settings.json
